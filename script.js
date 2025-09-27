@@ -4,7 +4,7 @@ const userID = urlParams.get('userID') || 'anonimo';
 
 // Funzione per inviare dati a Google Sheets
 function inviaDati(prodotto, azione) {
-  fetch('https://script.google.com/macros/s/AKfycbzXhmmMfRM72ki-cTNXWh7ida0lbDovCEn2g7XCe2V9vQN5COg4QbQt1A_vpcaSoYXE/exec', {
+  fetch('https://script.google.com/macros/s/AKfycbxAJ2_G5v3QTn2YQ4VYrtyWRNFKRNfMDT8raqaQDiBKniXmfB2EzsoNlIurhUdCiTDI/exec', {
     method: 'POST',
     body: JSON.stringify({ userID, prodotto, azione }),
     headers: { 'Content-Type': 'application/json' }
